@@ -1,0 +1,3 @@
+	Nesta tela,  o sistema faz todas as validações de integridade da declação. Quando é dado OK, o sistema mostra o botão {\b FINALIZAR}, que finaliza uma declaração,  deixando-a  apta para ser {\ul gerada}{\v IDH_Geracao} em disquete.
+
+\{bmc FINAL.BMP\}

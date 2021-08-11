@@ -1,0 +1,20 @@
+VBGROUP 5.0
+StartupProject=..\BCU1\VsTBcu1.vbp
+Project=..\ECON\VsTEcon.vbp
+Project=..\ISSQN\VsTIss.vbp
+Project=..\COBR\VsTCobr.vbp
+Project=..\ARRE\VsTArre.vbp
+Project=VSTributo.vbp
+Project=..\SERV\VsTServ.vbp
+Project=..\INAD\VsTInad.vbp
+Project=..\MAIP\VsTMaip.vbp
+Project=..\PROC\VsTProc.vbp
+Project=..\REST\VsTrest.vbp
+Project=..\PLCO\VsTPlco.vbp
+Project=..\CAFI\VsCafi.vbp
+Project=..\REES\VsTRees.vbp
+Project=..\OBRIG\VsTObri.vbp
+Project=..\FISC\VsTFisc.vbp
+Project=..\RELA\VsTRela.vbp
+Project=..\VSTFUNCOES\VsTFuncoes.vbp
+Project=..\DECL\VsTDecl.vbp

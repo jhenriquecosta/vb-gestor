@@ -1,0 +1,28 @@
+\keepn{\fs25\b }{\f0\fs29\cf9\b {\f4\fs32\b INFORMAÇÕES PARA USO DA DIEF - ELETRÔNICA}}
+\pard
+
+		  A {\cf9\b DIEF - Eletrônica} é um programa de computador desenvolvido pela Secretaria de Fazenda do Estado do Maranhão que permite preparar a  Declaração de Apuração do ICMS e manter atualizados os dados cadastrais dos contribuintes e contadores.
+
+		{\cf9\b Opção do Menu do Sistema}
+
+	 	\{bmc MENU.BMP\}{\f0\fs26\cf9\b DIEF} - Permite escolher o tipo de informação que será preenchida ou consultada, conforme indicado abaixo:
+
+			 \{bmc APPLIC.BMP\}{\b Cadastro de {\uldb Contribuinte}{\v IDH_Contribuinte} e {\uldb Contador}{\v IDH_Contador}} - Informa os dados cadastrais do contribuinte e do contador.
+
+			\{bmc APPLIC.BMP\}{\b {\uldb Arquivo de Declarações}{\v IDH_Arquivo}} - Opção que mostra tela do  Arquivo de Declarações, onde serão feitas as consultas sobre Declarações já  informadas
+			 \{bmc APPLIC.BMP\}{\b{\uldb Declaração}{\v IDH_dief}} - Ativa tela de Cadastro de Declaração 
+			\{bmc APPLIC.BMP\}{\b Sair} - Encerra o sistema DIEF - Eletrônica
+
+		\{bmc MENU.BMP\}{\f0\fs26\cf9\b MANUTENÇÃO} - Compreende as funções de armazenamento, recuperação e segurança das informações, conforme indicado abaixo:
+			
+			\{bmc APPLIC.BMP\} {\b Cópia de Segurança} 
+				 \{bmc APPLIC.BMP\}{\b Gerar}  - Gera cópia do Banco de Dados que contém todas as informações.
+				 \{bmc APPLIC.BMP\}{\b Restaurar} - Recupera cópia do Banco de Dados.
+			\{bmc APPLIC.BMP\}{\b Reparar Base de Dados} - Recupera a integridade da base de dados, em caso de falta de corrente elétrica, problemas no sistema operacional, etc.
+
+		\{bmc MENU.BMP\}{\f0\fs26\cf9\b AJUDA}
+
+			\{bmc APPLIC.BMP\}{\b Tópicos de Ajuda} - Informações sobre operação do Sistema.
+			\{bmc APPLIC.BMP\}{\b {\ul Sobre o Sistema}{\v IDH_COPYRIGHT}} - Dados sobre Versão e o Proprietário.
+
+		

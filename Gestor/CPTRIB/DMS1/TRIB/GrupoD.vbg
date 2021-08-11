@@ -1,0 +1,7 @@
+VBGROUP 5.0
+Project=..\OBRIG\VsTObri.vbp
+Project=VSTributo.vbp
+StartupProject=..\MENU\MENU.vbp
+Project=..\..\VSTFUNCOES\VsTFuncoes.vbp
+Project=..\..\DECL\VsTDecl.vbp
+Project=..\..\..\..\..\..\Visual 2.0\Fontes\DMS\ECON\VsTEcon.vbp

@@ -1,0 +1,51 @@
+Type=Exe
+Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#C:\WINDOWS\SYSTEM32\STDOLE2.TLB#OLE Automation
+Reference=*\G{600A3A71-6F27-4999-B950-6667F1253E25}#1.0#0#..\CONF\VSConfig.dll#Gestão da Configuração
+Reference=*\A..\PROF\VSProfile.vbp
+Object={065E6FD1-1BF9-11D2-BAE8-00104B9E0792}#3.0#0; ssa3d30.ocx
+Object={831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0; MSCOMCTL.OCX
+Module=GMOD; GMOD.bas
+Form=GMNU000.frm
+Form=GMNU101.frm
+IconForm="GMNU101"
+Startup="Sub Main"
+HelpFile=""
+Title="Menu Principal"
+ExeName32="Gestor.exe"
+Command32=""
+Name="Gestor"
+HelpContextID="0"
+Description="Menu Principal de Aplicações"
+CompatibleMode="0"
+MajorVer=4
+MinorVer=1
+RevisionVer=3
+AutoIncrementVer=1
+ServerSupportFiles=0
+VersionCompanyName="Futuro Tecnologia"
+VersionFileDescription="Gestor"
+VersionLegalCopyright="Desenvolvido por Futuro Tecnologia"
+VersionLegalTrademarks="Futuro Consultoria Ltda."
+VersionProductName="Menu"
+CompilationType=0
+OptimizationType=0
+FavorPentiumPro(tm)=0
+CodeViewDebugInfo=0
+NoAliasing=0
+BoundsCheck=0
+OverflowCheck=0
+FlPointCheck=0
+FDIVCheck=0
+UnroundedFP=0
+StartMode=0
+Unattended=0
+Retained=0
+ThreadPerObject=0
+MaxNumberOfThreads=1
+DebugStartupOption=0
+
+[MS Transaction Server]
+AutoRefresh=1
+
+[CodeSMART]
+Task_UID=06_05_03_09_35_24

@@ -1,0 +1,105 @@
+[Root]
+Most Recent Package=Standard Setup Package 1
+
+
+[Package|Standard Setup Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\BCP TECNOLOGIAS\Gestor\CPTRIB\BCU1\Package
+
+[Package|Standard Setup Package 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 1|Files Found]
+
+[Package|Standard Setup Package 1|Files Released]
+
+[Package|Standard Setup Package 1|Missing Dependency Information]
+C:\BCP TECNOLOGIAS\OCX\VTControles.ocx=
+C:\BCP TECNOLOGIAS\OCX\Cabecalho.ocx=
+C:\BCP TECNOLOGIAS\OCX\cTreeOpt.ocx=
+C:\WINDOWS\system32\ssa3d30.ocx=
+C:\WINDOWS\system32\sstabs2.ocx=
+C:\BCP TECNOLOGIAS\DLL\vsTFuncoes.dll=
+C:\BCP TECNOLOGIAS\DLL\VSClass.dll=
+
+[Package|Standard Setup Package 1|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\MSCOMCTL.OCX=
+
+[Package|Standard Setup Package 1|Files Added]
+
+[Package|Standard Setup Package 1|Files Removed]
+
+[Package|Standard Setup Package 1|Files In Project]
+C:\BCP TECNOLOGIAS\PRODUCAO\VsTBcu1.dll=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\BCP TECNOLOGIAS\DLL\VSClass.dll=Yes
+C:\BCP TECNOLOGIAS\DLL\vsTFuncoes.dll=Yes
+C:\WINDOWS\system32\COMCTL32.OCX=Yes
+C:\WINDOWS\system32\sstabs2.ocx=Yes
+C:\WINDOWS\system32\ssa3d30.ocx=Yes
+C:\WINDOWS\system32\TABCTL32.OCX=Yes
+C:\WINDOWS\system32\MSCOMCTL.OCX=Yes
+C:\BCP TECNOLOGIAS\OCX\cTreeOpt.ocx=Yes
+C:\BCP TECNOLOGIAS\OCX\Cabecalho.ocx=Yes
+C:\BCP TECNOLOGIAS\OCX\VTControles.ocx=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Standard Setup Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 1|Install Locations]
+C:\BCP TECNOLOGIAS\PRODUCAO\VsTBcu1.dll=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\BCP TECNOLOGIAS\DLL\VSClass.dll=$(WinSysPath)
+C:\BCP TECNOLOGIAS\DLL\vsTFuncoes.dll=$(WinSysPath)
+C:\WINDOWS\system32\COMCTL32.OCX=$(WinSysPath)
+C:\WINDOWS\system32\sstabs2.ocx=$(WinSysPath)
+C:\WINDOWS\system32\ssa3d30.ocx=$(WinSysPath)
+C:\WINDOWS\system32\TABCTL32.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\BCP TECNOLOGIAS\OCX\cTreeOpt.ocx=$(WinSysPath)
+C:\BCP TECNOLOGIAS\OCX\Cabecalho.ocx=$(WinSysPath)
+C:\BCP TECNOLOGIAS\OCX\VTControles.ocx=$(WinSysPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Standard Setup Package 1|Configure Shared Files]
+Applicable=Yes
+C:\BCP TECNOLOGIAS\PRODUCAO\VsTBcu1.dll=No
+
+[Package|Standard Setup Package 1|Distribution]
+Type=single
+Size=
+Title=VsTBcu1
+
+[Package|Standard Setup Package 1|Package]
+PackageFolder=C:\BCP TECNOLOGIAS\Gestor\CPTRIB\BCU1\Package
+ProjectFolder=C:\BCP TECNOLOGIAS\Gestor\CPTRIB\BCU1
+ServerSideCab=
+File1=C:\BCP TECNOLOGIAS\Gestor\CPTRIB\BCU1\Package\setup.exe
+File2=C:\BCP TECNOLOGIAS\Gestor\CPTRIB\BCU1\Package\Setup.Lst
+File3=C:\BCP TECNOLOGIAS\Gestor\CPTRIB\BCU1\Package\VsTBcu1.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

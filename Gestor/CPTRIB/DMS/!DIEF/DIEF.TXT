@@ -1,0 +1,104 @@
+\keepn{\fs25\b }{\f4\fs29\cf9\b DECLARAÇÃO}
+\pard
+\{bmc MODULO.BMP\}{\b{\cf9 MÓDULO  DECLARAÇÕES}}
+
+	Neste Módulo serão decladas as  informações econômicos-fiscais referentes a um determinado período. São apresentadas diversas telas onde devem ser  preenchidos  os dados de acordo com o regime de pagamento do  contribuinte (Normal, Empresa de Pequeno Porte e Microempresa).
+	Para navegar entre as diversas telas(Demonstrativo das Operações - Entradas ,Demonstrativo das Operações -  Saídas, Apuração do ICMS, Dados Complementares - Exercício Anterior, Recolhimento do Período), basta clicar na ficha correspondente.
+
+{\b 	Preenchendo a Declaração:}
+
+\{bmc APPLIC.BMP\}{\cf9\b Demonstrativo das Operações - Entradas (Regime Normal)} 
+\{bmc ENTRADA.BMP\}
+Valores Contábeis >= Base de cálculo + Isentas + Outras
+Informar totais de Valores Contábeis, Base de cálculo, Imposto creditado, Isentas e Outras, para validação da  soma de parciais
+
+          Os contribuintes na condição EPP que realizam operações com alíquota de até 17% e as Microempresas preencherão somente  a coluna de valores contábeis na ficha de "Demonstrativo das Operações - Entradas", conforme  abaixo:
+\{bmc APPLIC.BMP\}{\cf9\b Demonstrativo das Operações - Entradas (Regime EPP/ME)}
+\{bmc ENTRAD~1.BMP\}
+Informar total de Valores Contábeis para validação da  soma de parciais.
+{\cf3 Importante}: em se tratando de ME o valor das Operações - Entradas, corresponderá ao total das aquisições do trimestre informado.
+
+O contribuinte no regime de pagamento  de EPP,  deverá informar o quadro abaixo:
+\{bmc INFORME.BMP\}
+
+\{bmc APPLIC.BMP\}{\cf9\b Demonstrativo das Operações - Saidas} - Esta ficha não será apresentada para contribuinte do regime de pagamento EPP que realizam operações com alíquota até 17% e  Microempresa.
+\{bmc SAIDAS.BMP\}
+Valores Contábeis = Base de cálculo + Isentas + Outras
+Informar totais de Valores Contábeis, Base de cálculo, Imposto debitado, Isentas e Outras, para validação da  soma de parciais.
+
+\{bmc APPLIC.BMP\}{{\cf9 \b Apuração do ICMS}} - Nesta tela serão apresentados quadros diferentes para contribuinte de regime de pagamento Normal, Empresa de Pequeno Porte e Microempresa.
+
+{\cf9\b Apuração do ICMS - Contribuinte Regime  Normal}
+	Nesta tela deverá  ser informado o Faturamento do Mês(Receita Bruta) e a apuração do ICMS do período declarado.
+\{bmc APURACAO.BMP\}
+{\b Observações:}
+	Faturamento do Mês (Receita Bruta) - É o total das vendas de mercadorias em geral, e serviços tributados pelo ICMS e  ISS, inclusive receitas financeiras e outras geradas pelo contribuinte (aluguel, etc.). O  valor declarado não poderá se inferior ao total de: Vendas para o estado + Vendas  para outros estados + Vendas para o exterior.
+{\cf9\b Em Débito do Imposto:}
+	{\b Por saídas ou prestações -} Valor do ICMS debitado pelas operações  e prestações tributáveis relativas ao mês. Este valor é automaticamente transferido do total da coluna de imposto debitado da ficha "Demonstrativo das Operações - Saídas".
+	{\b Outros débitos -} O valor dos débitos não computados na linha acima. Apropriar, também, o ICMS Antecipação Parcial-Interestadual, informado em Outros Créditos.
+	{\b Estorno de créditos }- O valor dos créditos lançados indevidamente, desde que não tenha resultado na falta de recolhimento do ICMS.
+{\cf9\b Em Crédito de Imposto:}
+	{\b Por entradas ou aquisições} - Valor total do imposto creditado relativo às entradas de mercadorias e  utilização de serviços tributados no mês. Este valor é automaticamente transferido do total da coluna de imposto creditado da ficha "Demonstrativo das Operações - Entradas".
+	{\b Outros créditos -} Valor referente aos créditos autorizados pela legislação e pela Administração Tributária não indicados na linha acima. Informar, também, o   ICMS apurado decorrente do Regime de Antecipação Parcial-Interestadual. 
+	{\b Estorno de  débitos} - O valor dos débitos lançados indevidamente.
+	{\b Saldo credor do período anterior }- Valor do saldo credor do mês anterior, se  existir
+{\cf9\b Em apuração do Imposto:}
+	{\b Saldo devedor}  - Débito menos crédito, o valor do ICMS  no mês do regime normal de apuração (apurado automaticamente).
+	{\b Deduções} - Informar, se for o caso,  crédito oriundo de Benefício Fiscal  e outras deduções autorizadas.
+	{\b Imposto a recolher -}  É o saldo devedor menos as deduções (apurado automaticamente). 
+	{\b Saldo Credor a Transferir } -  Crédito menos débito, valor do saldo credor remanescente do ICMS a ser transportado para o mês seguinte, se for o caso (apurado automaticamente).
+
+{{\cf9 \b Apuração do ICMS - Contribuintes Especiais  -  Regime EPP}}
+\{bmc CABAPU~1.BMP\}
+- Faturamento do mês (Receita Bruta) - É o total de saídas de mercadorias e de prestação de serviços de transporte e comunicação.
+- Faturamento do mês x alíquota  = Imposto a recolher
+- Alíquota entre 1,5 % e 2.0 % (vide legislação)
+
+{\cf9\b Apuração do ICMS - Contribuintes Especiais  -  Regime Microempresa}
+\{bmc APUREPP.BMP\}
+- Período de apuração refere-se ao último mês  do trimestre (3,6,9,12)  para declaração do 1º,2º,3º e 4º  trimestres
+- Faturamento do mês (Receita Bruta) - É o total de saídas de mercadorias e de prestação de serviços de transporte e comunicação.
+- Total Faturamento = soma de parciais (apurado automaticamente)
+- Faturamento x Alíquota = Imposto a recolher (apurado automaticamente)
+- Alíquota entre 0.3 % e 1.0 % (vide legislação)
+- Total Imposto = soma de parciais (apurado automaticamente)
+
+\{bmc APPLIC.BMP\}{{\cf9 \b Recolhimento do Período}}
+           Nesta ficha serão apresentados quadros diferentes para cada regime de pagamento do ICMS.
+\{bmc RECOLHI.BMP\}
+          Declare nas respectivas colunas o ICMS recolhido (antecipadamente) e o  ICMS a recolher, apurados no período, e relativos aos diferentes Regimes de Pagamento.
+
+{\b Observações:}
+{\cf14\b Normal -} É o valor do ICMS  recolhido e a recolher, apurado por estabelecimento que efetua operações no regime de conta gráfica.
+{\cf14\b Empresa de Pequeno Porte }- É o valor do ICMS recolhido e a recolher, apurado por estabelecimento que efetua operações no regime simplificado ( somente para empresa de pequeno porte, com alíquota menor ou igual a 17%).
+{\cf14\b Microempresa }- É o valor do ICMS  recolhido e a recolher, apurado por estabelecimento que efetua operações no regime simplificado - sistema Simples.
+{\cf14\b Substituição Tributária pelas Saídas} - É o valor do ICMS recolhido e a recolher, apurado por estabelecimento responsável  por operações de saídas internas e/ou interestaduais, com mercadorias alcançados pelo regime de substituição tributária. 
+{\cf14\b Substituição Tributária pelas Entradas} - É o valor do ICMS recolhido e a recolher, apurado por estabelecimento responsável por operações de entradas internas e/ou interestaduais, com mercadorias alcançadas pelo regime de substituição tributária.
+{\cf14\b Antecipação Parcial - Interestadual} - É o valor do ICMS recolhido e a recolher, apurado por estabelecimentos CAE 7.000.00 (comércio atacadista) e CAE 8.000.00 (comércio varejista), adquirentes de mercadorias oriundas de outras unidades da Federação e destinadas à comercialização (o recolhimento do período é o  valor apurado e  registrado em Outros Débitos - Ficha de Apuração do ICMS.
+{\cf14\b Diferencial de Alíquota} - É o valor do ICMS recolhido e a recolher, apurado por estabelecimento adquirente de mercadorias para consumo, e para o ativo fixo (até out/96).
+{\cf14\b Importações -} É o valor do ICMS recolhido e a recolher, apurado por estabelecimento adquirente de mercadorias importadas do exterior.
+{\cf14\b Simplificado} - É o valor do ICMS recolhido e a recolher, apurado por estabelecimento não cadastrado no CAD - ICMS ou que realizam operações e prestações, eventualmente e em outras situações a critério da SEFAZ. 
+
+{\cf14\b Incentivado} - É o valor do ICMS a recolher (parcela incentivada), apurado por estabelecimento beneficiado com incentivo fiscal (ex. SINCOEX e outros).
+
+{\cf3\b Nota} -{{\b \i Informar total do ICMS recolhido e a recolher, para validação da soma de parciais.}}
+
+\{bmc APPLIC.BMP\}{\cf9\b Dados Complementares -  Exercício Anterior} - Esta ficha somente será ativada para preenchimento no  periodo 03/AAAA e, desde que  a data de inicio de atividade do contribuinte (Normal e  EPP/ME) for anterior ao exercício do período declarado.
+\{bmc ANOANTE.BMP\}
+- {\b Total Despesas} = soma de parciais
+-{\b Estoque Inicial} = soma de parciais
+-{\b Estoque Final} = soma de parciais
+
+\{bmc MODULO.BMP\}{\b{\cf9 OPERAÇÃO DOS BOTÕES  DO CADASTRO DE DECLARAÇÃO}}
+
+{\b 	Em todas as telas estão disponíveis os seguintes botões:}
+
+	\{bmc CLICK.BMP\}{\b INICIAR}   	-  Limpa todos os campos da Declaração.
+	\{bmc CLICK.BMP\}{\b ARQUIVO}	-  Mostra a tela de {\uldb Arquivo de Declarações}{\v IDH_Arquivo}.
+	\{bmc CLICK.BMP\}{\b BUSCAR}	-  Mostra a tela de Consulta de Contribuinte.
+	\{bmc CLICK.BMP\}{\b SALVAR}	-  Grava informações preenchidas  na tela.
+	\{bmc CLICK.BMP\}{\b EXCLUIR}	-  Exclui uma declaração selecionada
+	\{bmc CLICK.BMP\}{\b IMPRIMIR}	-  Imprime a  declaração selecionada. 
+	\{bmc CLICK.BMP\}{\b{\uldb FINALIZAR}{\v IDH_Final}}	-  Finaliza a  declaração selecionada. 
+	\{bmc CLICK.BMP\}{\b CALCULADORA}	-  Mostra a  {\ul calculadora }{\v IDH_Calc}do Windows. 
+	\{bmc CLICK.BMP\}{\b{\uldb SAIR}{\v IDH_contents}}	-  Encerra o módulo de Declaração

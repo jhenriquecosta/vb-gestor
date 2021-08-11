@@ -1,0 +1,41 @@
+\keepn{\fs25\b }{\f4\fs29\cf9\b CADASTRO DE CONTRIBUINTE}
+\pard
+\{bmc MODULO.BMP\}{\b {\cf9 CADASTRO DE  CONTRIBUINTES}}
+	
+	Nesta tela, o Contribuinte deverá informar os seus dados cadastrais, para eventual atualização no Cadastro da SEFAZ.
+
+\{bmc MODULO.BMP\}{\b {\cf9 CAMPOS DO CADASTRO}}
+
+
+	- Inscrição 
+	- Nome/Razão Social  	 
+	- CPF/ CGC
+	- Nome Fantasia
+	- Tipo de Logradouro
+	- Nome do Logradouro
+	- Número 
+	- Complemento
+	- Referência
+	- Bairro
+	- Cidade
+	- CEP
+	- UF
+	- DDD e Nº do Telefone
+	- DDD e Número do  Fax
+	- Correio Eletrônico (Endereço na Internet)
+	- Atividade Econômica
+	- Livros Fiscais (local onde é encontrado o Livro Fiscal da Empresa)
+	- Data de Início de Atividade
+	- Informações do Contador ({{\cf12\i \b Informação obrigatória para contribuinte com regime de pagamento NORMAL, exceto Produtor Rural -  Pessoa Física})}
+		- Nome do Contador (somente os contadores cadastrados)
+		- Data de Início de Atividade do contador na Empresa
+		- Vínculo do contador com a empresa (empregado, autônomo, etc.)
+
+\{bmc MODULO.BMP\}{\b{\cf9 OPERAÇÃO DOS BOTÕES  NO CADASTRO DE CONTRIBUINTE}}
+
+	\{bmc CLICK.BMP\}{\b INICIAR}   	-  Limpa todos os campos do cadastro, para ingresso de informações cadastrais.
+	\{bmc CLICK.BMP\}{\b BUSCAR}	-  Permite pesquisar no arquivo do computador,  através de outra tela,  as informações cadastrais de contribuintes.
+	\{bmc CLICK.BMP\}{\b SALVAR}	-  Grava no disco principal do computador os dados preenchidos e totalmente válidos.
+	\{bmc CLICK.BMP\}{\b EXCLUIR}	-  Exclui um contribuinte cadastrado
+	\{bmc CLICK.BMP\}{\b IMPRIMIR}	-  Imprime os dados do contribuinte selecionado na tela.
+	\{bmc CLICK.BMP\}{\b {\uldb SAIR}{\v IDH_contents}}	-  Encerra o módulo de Cadastro de Contribuinte, e retorna à tela inicial.

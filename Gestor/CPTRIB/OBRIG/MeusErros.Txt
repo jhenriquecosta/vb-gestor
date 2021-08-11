@@ -1,0 +1,8 @@
+"->","26/02/2014-15:25--EncheCombo -> select nome tab_atividade_economica order by tae_nome-91-Object variable or With block variable not set","-0"
+"->","26/02/2014-15:29--EncheCombo -> select nome tab_atividade_economica order by tae_nome-91-Object variable or With block variable not set","-0"
+"->","26/02/2014-15:39--EncheCombo -> select tae_nome tab_atividade_economica order by tae_nome-91-Object variable or With block variable not set","-0"
+"->","26/02/2014-15:41--EncheCombo -> select tae_nome tab_atividade_economica order by tae_nome-91-Object variable or With block variable not set","-0"
+"->","26/02/2014-15:42--EncheCombo -> select tae_nome tab_atividade_economica order by tae_nome-91-Object variable or With block variable not set","-0"
+"->","26/02/2014-15:45--EncheCombo -> select tae_nome tab_atividade_economica order by tae_nome-91-Object variable or With block variable not set","-0"
+"->","26/02/2014-15:47--EncheCombo -> select tae_nome tab_atividade_economica order by tae_nome-91-Object variable or With block variable not set","-0"
+"->","26/02/2014-15:47--EncheCombo -> select tae_nome tab_atividade_economica order by tae_nome-91-Object variable or With block variable not set","-0"

@@ -1,0 +1,133 @@
+'Public Sub GeraArquivoIPTU(Periodo As Integer, NomeArq As String)
+'    Dim Sql As String
+'    Dim RsImoveis As VSRecordset
+'    Dim RsPagos As VSRecordset
+'    Dim Arq As Integer
+'    Dim AliquotaTerreno As Double
+'    Dim AliquotaPredio  As Double
+'    Dim InscImovel  As String
+'    Dim RsItem As VSRecordset
+'    Dim CodTributo As String
+'    Dim Picture As PictureBox
+'    Dim RsGeral As VSRecordset
+'    Const ValorMin As Double = 10
+'    Dim Vencimento As String
+'    Dim Contador As Double
+'    'BUSCANDO TODOS OS IMOVEIS / CONTRIBUINTES
+'    Contador = 0
+'    Sql = "Select  TDI_TIM_IC as IC,tdi_tim_ic_unidade AS uNIDADE, tim_ic_anterior as ICAnterior, TTL_NOME as ImovelLogr,tlg_nome as ImovelNomeLogr," & _
+'        "TBA_NOME as ImovelBairro, tim_numero as ImovelNum,  tim_complemento as ImovelCompl,tim_tci_im as InscMunic,tci_nome as NomeContrib, " & _
+'        " tci_logradouro as ContribLogr,tci_nome_logradouro as ContribNomeLogr," & _
+'        " tci_numero as ContribNum,tci_complemento as ContribCompl, tci_bairro as ContribBairro,tci_cep as ContribCEP,tci_cidade as ContribCidade," & _
+'        " tci_UF as ContribUF,TIM_ZONA AS Zona, TIM_VALOR_TERRENO as ValorTerreno,TIM_VALOR_EDIFIC as ValorEdific,tim_tipo_imovel as TipoImovel from tab_bcu,tab_contribuinte where tim_tci_im=tci_im  AND (tdi_tim_ic_unidade = 0   OR tdi_tim_ic_unidade = 1 OR tdi_tim_ic_unidade > 200 ) ORDER BY TDI_tim_ic ASC"
+'        Screen.MousePointer = 11
+'    If Bdados.AbreTabela( Sql, RsImoveis) Then
+'             'BUSCANDO TODOS OS CREDITOS DE IPTU PARA CADA IMOVEL
+'             RsImoveis.MoveFirst
+'
+'            'DADOS PADROES
+'             Arq = FreeFile(0)
+'            Open NomeArq For Output As Arq
+'            'LINHA  0 - PREFEITURA
+'            Print #Arq, PreencheEspaco("0" & Temp.PegaParametro(BDados,"CGC CLIENTE") & UCase(Temp.PegaParametro(BDados,"CLIENTE") & Space(100 - Len(Temp.PegaParametro(BDados,"CLIENTE"))) & Temp.PegaParametro(BDados,"ENDERECO CLIENTE") & " " & AplicacoesVTFuncoes.Municipio & " " & Temp.PegaParametro(BDados,"ESTADO CLIENTE")), 180)
+'            'LINHA 1 - IMPOSTO
+'            CodTributo = Imposto.BuscaCodIptu
+'            Print #Arq, PreencheEspaco("1" & Format(CodTributo, "00000000000000") & "IMPOSTO PREDIAL E TERRITORIAL URBANO" & Periodo, 180)
+'            Sql = "SELECT TGE_NOME,TGE_CODIGO FROM TAB_GERAL WHERE TGE_TIPO = 710 AND TGE_CODIGO > 0 ORDER BY TGE_CODIGO ASC"
+'            If Bdados.AbreTabela( Sql, RsGeral) Then
+'                RsGeral.MoveFirst
+'                'LINHA 2 - DATAS PAGAMENTOS - 30 POS.
+'                Print #Arq, TrocaChar("20000" & Space(17) & Right(RsGeral!TGE_NOME, 4) & Mid(RsGeral!TGE_NOME, 4, 2) & Left(RsGeral!TGE_NOME, 2), " ", "0")
+'                Do
+'                        Print #Arq, "2" & TrocaChar(Format(RsGeral!TGE_CODIGO, "0000") & Space(17) & Right(RsGeral!TGE_NOME, 4) & Mid(RsGeral!TGE_NOME, 4, 2) & Left(RsGeral!TGE_NOME, 2), " ", "0")
+'                        RsGeral.MoveNext
+'                Loop While Not RsGeral.EOF
+'            End If
+'            Bdados.FechaTabela RsGeral
+'            'DADOS ESPECIFICOS
+'             Do
+'
+'                    Sql = "SELECT TGT_TIM_IC, tgt_cod_pagamento, tgt_valor_tributo as VALOR,tgt_taxa_expediente AS Taxa,tgt_parcela from TAB_GERACAO_TRIBUTO WHERE TGT_TIM_IC " ,RsImoveis!IC & IIf(RsImoveis!Unidade < 200, "000", RsImoveis!Unidade) & "' ORDER BY tgt_parcela ASC"
+'                    If Bdados.AbreTabela( Sql, RsPagos) Then
+'                        'LINHA 3 - DADOS DO IMOVEL
+'                        If RsPagos!Valor >= ValorMin Then
+'                                    Print #Arq, PreencheEspaco("3" & RsImoveis!IC & Format(IIf(RsImoveis!Unidade < 200, 0, IIf(RsImoveis!Unidade < 600, 200, 600)), "000") & Format(RsImoveis!ICAnterior, "00000000000000") & _
+'                                    RsImoveis!ImovelLogr & " " & RsImoveis!ImovelNomeLogr & " " & RsImoveis!ImovelNum & " " & RsImoveis!ImovelCompl & _
+'                                    RsImoveis!ImovelBairro, 180)
+'
+'                                    'LINHA 4 - DADOS DO CONTRIBUINTE
+'                                    Print #Arq, PreencheEspaco("4" & RsImoveis!InscMunic & " " & RsImoveis!NomeContrib & Space(60 - Len(RsImoveis!NomeContrib)) & " " & RsImoveis!ContribLogr & " " & RsImoveis!ContribNomeLogr & " " & _
+'                                    RsImoveis!ContribNum & " " & RsImoveis!ContribCompl & Space(104 - Len(RsImoveis!ContribLogr & _
+'                                    RsImoveis!ContribNomeLogr & RsImoveis!ContribNum & " " & RsImoveis!ContribCompl)) & RsImoveis!ContribBairro & _
+'                                    Space(30 - Len(RsImoveis!ContribBairro)) & IIf(Len(RsImoveis!ContribCidade) <= 24, _
+'                                    RsImoveis!ContribCidade, Mid(RsImoveis!ContribCidade, 1, 24)) & _
+'                                    Space(24 - Len(IIf(Len(RsImoveis!ContribCidade) <= 24, RsImoveis!ContribCidade, _
+'                                    Mid(RsImoveis!ContribCidade, 1, 24)))) & _
+'                                    RsImoveis!ContribUF & " " & RsImoveis!ContribCEP, 255)
+'
+'                                    'LINHA 5 - DADOS DOS ITENS LANCADOS DO IMOVEL
+'                                    'Zona
+'                                    Print #Arq, "5" & "099" & TrocaChar(Space(99), " ", "0") & NVL("" & TrocaChar(Format(RsImoveis!Zona, "0.00"), ",", ""), "500")
+'                                    Sql = "Select tdi_valor_item,tdi_tco_cod_componente from TAB_BCU_DETALHE_IMOVEL where tdi_tim_ic " ,RsImoveis!IC & _
+'                                    "' and tdi_tim_ic_unidade=" & RsImoveis!Unidade & " and tdi_tco_cod_componente in (107,108,113) order by tdi_tco_cod_componente"
+'                                    If Bdados.AbreTabela( Sql, RsItem) Then
+'                                    RsItem.MoveFirst
+'                                        'Testada = 107  /  Area Terreno = 108     /    Area total Edificada = 113
+'                                        Do While Not RsItem.EOF
+'                                            Print #Arq, "5" & RsItem!tdi_tco_cod_componente & TrocaChar(Space(80), " ", "0") & Format(100 * NVL(RsItem!tdi_valor_item, 0), "0000000000000000000000")
+'                                            RsItem.MoveNext
+'                                        Loop
+'                                    End If
+'                                    'Valor Terreno
+'                                    Print #Arq, "5" & "200" & TrocaChar(Space(80), " ", "0") & Format(100 * NVL("" & RsImoveis!ValorTerreno, 0), "0000000000000000000000")
+'                                    'Valor Edificacao
+'                                    Print #Arq, "5" & "201" & TrocaChar(Space(80), " ", "0") & Format(100 * NVL("" & RsImoveis!Valoredific, 0), "0000000000000000000000")
+'                                    'Valor Imovel
+'                                    Print #Arq, "5" & "202" & TrocaChar(Space(80), " ", "0") & Format(100 * NVL("" & RsImoveis!Valoredific, 0) + NVL("" & RsImoveis!ValorTerreno, 0), "0000000000000000000000")
+'                                    'Bucando Aliquotas
+'                                    If RsImoveis!TipoImovel = 0 Then 'Se apenas terreno
+'                                            AliquotaTerreno = Imposto.BuscaAliquotaImovelIPTU(tim_TerrenoSemEdif, NVL("" & RsImoveis!tba_zona, 5))
+'                                    Else 'Se terreno com predio
+'                                            AliquotaTerreno = Imposto.BuscaAliquotaImovelIPTU(tim_TerrenoComEdif, NVL("" & RsImoveis!Zona, 5))
+'                                            AliquotaPredio = Imposto.BuscaAliquotaImovelIPTU(tim_Edificacao, NVL("" & RsImoveis!Zona, 5))
+'                                    End If
+'                                    'Aliquota terreno
+'                                    Print #Arq, "5" & "203" & TrocaChar(Space(80), " ", "0") & Format(AliquotaTerreno * 10000, "0000000000000000000000")
+'                                    'Aliquota Predio
+'                                    Print #Arq, "5" & "204" & TrocaChar(Space(80), " ", "0") & Format(AliquotaPredio * 10000, "0000000000000000000000")
+'
+'                                    Do
+'                                        'LINHA 6 - DADOS DOS PAGAMENTOS
+'                                        If RsPagos!TGT_PARCELA = 0 Or RsPagos!TGT_PARCELA = 1 Then
+'                                                Vencimento = "20011030"
+'                                        ElseIf RsPagos!TGT_PARCELA = 2 Then
+'                                                Vencimento = "20011120"
+'                                        ElseIf RsPagos!TGT_PARCELA = 3 Then
+'                                                Vencimento = "20011220"
+'                                        End If
+'
+'                                        Print #Arq, PreencheEspaco("600" & RsPagos!TGT_PARCELA & Format(100 * CDbl(NVL(RsPagos!Valor - RsPagos!Taxa, 0)), "00000000000000000000" & "0099") & _
+'                                        Format(100 * CDbl(NVL(RsPagos!Taxa, 0)), "0000000000000000000000") & "0000" & _
+'                                        GeraCodBarra(RsPagos!tgt_cod_pagamento, CodTributo, CDbl(NVL(RsPagos!Valor, 0)), _
+'                                        Picture, CStr(Periodo), CStr(Vencimento), 100 * RsPagos!TGT_PARCELA, 1), 200)
+'                                        InscImovel = RsImoveis!IC
+'                                        RsPagos.MoveNext
+'                                    Loop While Not RsPagos.EOF
+'                        Else
+'                            DoEvents
+'                        End If
+'                        Contador = Contador + 1
+'                        TARR102.lblConta = Contador
+'                        DoEvents
+'                    Else
+'                            Contador = Contador
+'                            DoEvents
+'                    End If
+'                    RsImoveis.MoveNext
+'             Loop While Not RsImoveis.EOF
+'             Print #Arq, PreencheEspaco(TrocaChar("9" & Space(105), " ", "0"), 106)
+'             Screen.MousePointer = 0
+'             Close #1
+'    End If
+'End Sub
+

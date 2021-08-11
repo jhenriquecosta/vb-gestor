@@ -1,0 +1,36 @@
+Type=Exe
+Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#C:\WINDOWS\System32\stdole2.tlb#OLE Automation
+Reference=*\G{6C4CAC44-0351-492B-8CE8-24F4FD48C75A}#1.0#0#C:\Arquivos de Programas\Sistema Gestor Municipal\VSClass.dll#Visual Class
+Object={81CC7CD2-6894-4EEB-9FC6-A881BF8E4133}#1.0#0; VTControles.ocx
+Object={5012403C-6EE0-11D5-ADEC-00D0096D1D42}#9.2#0; Cabecalho.ocx
+Form=Form1.frm
+IconForm="Form1"
+Startup="Form1"
+Command32=""
+Name="Project1"
+HelpContextID="0"
+CompatibleMode="0"
+MajorVer=1
+MinorVer=0
+RevisionVer=0
+AutoIncrementVer=0
+ServerSupportFiles=0
+VersionCompanyName="Visual Tecnologia"
+CompilationType=0
+OptimizationType=0
+FavorPentiumPro(tm)=0
+CodeViewDebugInfo=0
+NoAliasing=0
+BoundsCheck=0
+OverflowCheck=0
+FlPointCheck=0
+FDIVCheck=0
+UnroundedFP=0
+StartMode=0
+Unattended=0
+Retained=0
+ThreadPerObject=0
+MaxNumberOfThreads=1
+
+[MS Transaction Server]
+AutoRefresh=1

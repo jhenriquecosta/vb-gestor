@@ -1,0 +1,8 @@
+VBGROUP 5.0
+Project=..\ECON\VsTEcon.vbp
+Project=..\OBRIG\VsTObri.vbp
+Project=VSTributo.vbp
+StartupProject=..\MENU\MENU.vbp
+Project=..\..\VSTFUNCOES\VsTFuncoes.vbp
+Project=..\..\DECL\VsTDecl.vbp
+Project=..\DecDll\DecDll.vbp

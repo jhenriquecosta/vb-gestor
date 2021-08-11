@@ -1,0 +1,3 @@
+Este Programa foi desenvolvido pelo:
+{\b CIAT - Centro Interamericano de Administrações Tributárias}
+{\b{\i Laboratório Tecnológico}}

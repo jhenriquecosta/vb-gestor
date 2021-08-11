@@ -1,0 +1,34 @@
+.OPTION EXPLICIT
+.Set Cabinet=off
+.Set Compress=off
+.Set MaxDiskSize=CDROM
+.Set ReservePerCabinetSize=6144
+.Set DiskDirectoryTemplate=".."
+.Set CompressionType=MSZIP
+.Set CompressionLevel=7
+.Set CompressionMemory=21
+.Set CabinetNameTemplate="VsTBcu1.CAB"
+"Setup.Lst"
+"setup.exe"
+.Set Cabinet=on
+.Set Compress=on
+"VsTBcu1.dll"
+"msvbvm60.dll"
+"OLEAUT32.DLL"
+"OLEPRO32.DLL"
+"ASYCFILT.DLL"
+"STDOLE2.TLB"
+"COMCAT.DLL"
+"VSClass.dll"
+"vsTFuncoes.dll"
+"COMCTL32.OCX"
+"sstabs2.ocx"
+"ssa3d30.ocx"
+"TABCTL32.OCX"
+"MSCOMCTL.OCX"
+"cTreeOpt.ocx"
+"Cabecalho.ocx"
+"VTControles.ocx"
+"SETUP1.EXE"
+"VB6STKIT.DLL"
+"ST6UNST.EXE"

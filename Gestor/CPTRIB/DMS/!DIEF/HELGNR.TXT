@@ -1,0 +1,39 @@
+\keepn{\fs25\b }{\f4\fs29\cf9\b SUBSTITUIÇÃO TRIBUTÁRIA}
+\pard
+
+\{bmc MODULO.BMP\}{\b GNR -}  Esta opção permite a manutenção dos  cadastros e arquivos do sistema.
+
+\{bmc MENU.BMP\}{\b Recepção de disquetes}  
+	Esta opção permite introduzir no sistema as informações remetidas pelos contribuintes que originam o imposto de substituição. Consiste na gravação da GNR remetida,  validação das informações e geração das mensagens de inconsistências, se for o caso. 
+	Para cada conjunto  de GNR e disquete lido é gerado um número sequencial identificador deste conjunto  processado, que deverá ser aposto ao disquete. É gerada uma cópia no computador  do contribuinte no mesmo diretório de trabalho onde foi instalado o programa, obedecendo a seguinte estrutura:
+ 	
+	GNRnnnnn.DAT, onde nnnnn é o número sequencial, GNR é o identificador do tipo de arquivo e DAT é a extensão do arquivo.
+	
+\{bmc MENU.BMP\}{\cf9\b Cadastro de Contribuintes}
+	Esta opção é usada para manter o cadastro de contribuintes substitutos do imposto e tem caráter provisório. Quando da implantação total da rede e a integração desta delegacia,  será usado o cadastro de contribuintes do Estado.
+
+\{bmc MODULO.BMP\}{\cf9\b Consultas}
+
+\{bmc MENU.BMP\}{\cf9\b Substituições apresentadas em um período}
+	Consultar as Substituições Apresentadas em um período que   são enviadas à DCEST,  juntamente com os disquetes ou listagens. 
+
+	Ao selecionar uma linha  pode visualizar:  O detalhe das notas fiscais geradoras deste imposto ou, os dados do contribuinte substituto responsável por esta GNR.
+
+\{bmc MENU.BMP\}{\cf9\b Cruzamento das NFs declaradas e do sistema Fronteira}
+	Permite o cruzamento entre as duas vias de ingresso de dados e mercadorias no Estado
+
+\{bmc MENU.BMP\}{\cf9\b Comparativo de substituição apresentada por bancos e contribuintes}
+	Emite as diferenças existentes entre as duas vias de apresentação de das GNR a saber : A rede bancária e a prestação de informação à DCEST a que estão sujeitos os contribuintes substitutos com a remessa dos detalhes das notas fiscais geradoras do imposto.
+
+\{bmc MENU.BMP\}{\cf9\b Substituição apresentada por bancos}
+	Consultar as Substituições apresentadas pelos bancos em um período e ingressadas no sistema de arrecadação pela conversão do DOC a um DARE. 
+
+\{bmc MENU.BMP\}{\cf9\b Consulta de Notas Fiscais de um  Contribuinte}
+	Permite consultar as notas fiscais de um contribuinte segundo a fonte informada: 
+	
+	\{bmc CLICK.BMP\}{\b GNR }- Informada pelo contribuinte substituto
+	\{bmc CLICK.BMP\}{\b Sistema Fronteira }- Entradas através da fronteira do Estado.
+
+\{bmc MENU.BMP\}{\cf9\b Consulta de Notas Fiscais consolidadas por mês por contribuinte }
+	Exibe as informações agrupadas e consolidadas segundo o período fornecido. Ao selecionar uma linha da matriz,  se tem-se  acesso aos detalhes das notas fiscais desta linha selecionada.
+

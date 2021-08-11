@@ -1,0 +1,36 @@
+\keepn{\fs25\b }{\f4\fs29\cf9\b CADASTRO DE CONTADOR}
+\pard
+\{bmc MODULO.BMP\}{\b {\cf9 CADASTRO DE  CONTADOR}}
+
+	Nesta tela, o Contribuinte deverá informar os  dados cadastrais do contador da empresa.
+		
+\{bmc MODULO.BMP\}{\b{\cf9 CAMPOS DO CADASTRO} }
+
+
+	- CRC
+	- UF CRC 	 
+	- Nome 
+	- CPF/CGC
+	- Tipo de Logradouro
+	- Nome do Logradouro
+	- Número 
+	- Complemento
+	- Bairro
+	- Cidade
+	- UF
+	- CEP
+	- DDD e Nº do Telefone
+	- DDD e Número do  Fax
+	- Correio Eletrônico (Endereço na Internet)
+	- Nome da(o)  Esposa(o)
+	- CPF da(o)  Esposa(o)
+
+
+\{bmc MODULO.BMP\}{\b{\cf9 OPERAÇÃO DOS BOTÕES  DO CADASTRO DE CONTADOR}}
+
+	\{bmc CLICK.BMP\}{\b INICIAR}   	-  Limpa todos os campos do cadastro, para ingresso de informações cadastrais.
+	\{bmc CLICK.BMP\}{\b BUSCAR}	-  Permite pesquisar no arquivo do computador, através de outra tela,  as informações cadastrais dos contadores.
+	\{bmc CLICK.BMP\}{\b SALVAR}	-  Grava no disco principal do computador os dados preenchidos e totalmente válidos.
+	\{bmc CLICK.BMP\}{\b EXCLUIR}	-  Exclui um contador cadastrado
+	\{bmc CLICK.BMP\}{\b IMPRIMIR}	-  Imprime os dados do contador selecionado na tela.
+	\{bmc CLICK.BMP\}{\b {\uldb SAIR}{\v IDH_contents}}	-  Encerra o módulo de Cadastro, e retorna à tela inicial.

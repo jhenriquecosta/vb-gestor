@@ -1,0 +1,3 @@
+{\b Geração de Diquete}
+informe a unidade de disco que deseja gerar o Arquivo e Confirme
+\{bmc GERACAO.BMP\}

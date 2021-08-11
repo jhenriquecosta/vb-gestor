@@ -1,0 +1,5 @@
+VBGROUP 5.0
+StartupProject=..\ImpostoDigital\IDigital.vbp
+Project=CLASS\VSClass.vbp
+Project=CPTRIB\INAD\VsTInad.vbp
+Project=CPTRIB\VSTFUNCOES\VsTFuncoes.vbp

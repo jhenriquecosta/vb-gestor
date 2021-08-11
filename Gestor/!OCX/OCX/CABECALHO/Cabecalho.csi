@@ -1,0 +1,16 @@
+[History]
+B0=Cabecalho/cabVISUAL/Exibir
+B1=Cabecalho/Api/ValidaComponente
+B2=Cabecalho/rodVISUAL/UserControl_Initialize
+B3=Cabecalho/rodVISUAL/Exibir
+B4=Cabecalho/rodVISUAL/UserControl_WriteProperties
+B5=Cabecalho/rodVISUAL/UserControl_Resize
+B6=Cabecalho/rodVISUAL/UserControl_ReadProperties
+B7=Cabecalho/rodVISUAL/UserControl_InitProperties
+B8=Cabecalho/rodVISUAL/Sistema
+B9=Cabecalho/rodVISUAL/Modulo
+B10=Cabecalho/rodVISUAL/VerMaior
+B11=Cabecalho/rodVISUAL/VerMenor
+B12=Cabecalho/rodVISUAL/VerRevisao
+B13=Cabecalho/rodVISUAL/CorFundo
+B14=Cabecalho/rodVISUAL/CorFrente

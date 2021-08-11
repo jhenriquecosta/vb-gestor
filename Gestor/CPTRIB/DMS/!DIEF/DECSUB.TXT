@@ -1,0 +1,73 @@
+\keepn{\fs25\b }{\f0\fs29\cf9\b {\f4\fs32\b Controle da Recepção de Arquivos}}
+\pard
+
+\{bmc MODULO.BMP\}{\cf9\b Objetivo }: Controlar os arquivos enviados por teleprocesso quanto a:
+
+	{\b Que  todos os agentes recebedores tenham enviado os arquivos,
+	Que os tenham enviado nas datas acordadas,
+	Que o seu conteúdo esteja correto.}
+
+Além destas funções o programa pode ativar a atualização dos dados recebidos nas tabelas correspondentes, gerando os relatórios estatísticos correspondentes.
+
+\{bmc MODULO.BMP\}{\cf9\b Funções do programa:}
+
+\{bmc MENU.BMP\}{\cf9\b Arquivo }- Esta opção permite selecionar as funções necessárias ao processamento dos arquivos recebidos no computador destinado para esta finalidade.
+Recepcionar arquivos - Permite selecionar o arquivo em um diretório específico. Os arquivos selecionados são os que obedecem à estrutura de PPBBB.JJJ onde :
+
+	{\b PP} - é o código do processo cujo arquivo se está recebendo,
+	{\b BBB} - é o código do agente recebedor que está enviando o arquivo,
+	{\b JJJ} - é a data juliana do movimento.
+
+\{bmc CLICK.BMP\}{\cf9\b Selecione o arquivo desejado com um doble-click}
+
+\{bmc MENU.BMP\}{\cf9\b Gerar espera} - Esta opção prepara o arquivo histórico de movimentos recebidos para os dias úteis do mês e ano para o qual se quer gerar a  espera. Isto é feito para cada um dos agentes vinculados a um processo selecionado ou a todos os processosm, se esta foi a opção selecionada da tabela Processos de um Agente.
+
+	{\b Período }- O mês e o ano de que se quer gerar a espera.
+	{\b Processo }- Seleciona o processo que se quer gerar.
+	{\b Gerar }- Iniciar processo de geração.
+
+	A tabela resultado de todos os dias úteis gerada para o Período dado é visualizada. Pode-se incluir ou excluir datas nesta tabela usando-se as teclas  Ins ou Del. A exclusão de um dia só pode ser efetivada se não houver movimento para aquele dia de algum dos processos.
+
+\{bmc MENU.BMP\}{\cf9\b Consultas} - Com esta opção pode-se consultar o arquivo de movimento selecionando os registros por vários critérios. 
+
+	{\b{\cf9 Processo}  }- O processo de interesse,
+	{\b {\cf9 Agente} }- Nome da entidade conveniada,
+	{\b{\cf9 Tipo} }- O tipo de registro que se quer consultar:
+
+		Todos, ou
+		Entidade, ou
+		 Agente, ou
+		Máquina.
+
+	 {\b{\cf9 Integralidade} }- Indica se a entidade ou o agente apresentou a informação de todos os seus dependentes hierárquicos  (1-Sim, 0-Não)
+
+	O nível mais baixo da hierarquia por definição sempre apresenta o movimento todo (integral).
+
+	 {\b{\cf9 Movimentos} }- Indica as datas inicial e final de interesse de pesquisa.
+
+	{\b {\cf9 Estado} }- Indica o estado do arquivo em espera.
+
+		{\b 0 - Em espera, o movimento ainda não foi processado ou enviado,
+		1 - Início de validação da recepção
+		2 - Fim de validação da recepção
+		3 - Início de atualização nas bases de dados
+		4 - Arquivo atualizado na base de dados}
+
+\{bmc MENU.BMP\}{\b {\cf9 Tabelas}} 
+
+	 {\b{\cf9 Agentes Recebedores}} - Esta tabela contém 3 tipos de agentes:
+
+	{\b {\cf9 Entidade conveniada}} - Bancos, Correios, Caixas, etc
+	{\b {\cf9 Agente da entidade conveniada}} - unidade física e operacional onde se executa os processos.
+	{\b{\cf9 Máquina do agente}} -  máquina onde se executam os processos conveniados e que geram as informações a serem enviadas para a SEFAZ.
+
+	{\b{\cf10 Nao é necessário existir todos os 3 níveis, mas os existentes devem respeitar a hierarquia enunciada acima. Por exemplo: Não pode haver máquina sem a existencia de um agente da unidade conveniada}}.
+
+	{\b {\cf9 Processos} }- São os processos que geram arquivos a serem controlados.
+	
+	{\b{\cf9 Processos de um agente}}- Relação dos processos conveniados com uma Entidade, e portanto com seus agentes e/ou máquinas. Igualmente, devem ser relacionados os níveis que se deseja controlar. Esta tabela é usada na formatação do arquivo de espera do mes.
+	
+\{bmc MENU.BMP\}{{\cf9 \b Ajuda}}
+
+		{\ul Sobre}{\v IDH_COPYRIGHT}
+		{\uldb Tópicos}{\v IDH_Contents}

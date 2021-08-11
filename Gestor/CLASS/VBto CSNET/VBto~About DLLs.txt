@@ -1,0 +1,6 @@
+Unregistered DLLs:
+{C4847593-972C-11D0-9567-00A0C9273C2A} v8.0 "crviewer.dll"
+
+Registered DLLs:
+{F9043C88-F6F2-101A-A3C9-08002B2F49FB} v1.2	[MSComDlg]	"C:\Windows\SysWow64\COMDLG32.OCX"
+{065E6FD1-1BF9-11D2-BAE8-00104B9E0792} v3.0	[Threed]	"C:\Program Files\SEDUC\ssa3d30.ocx"

@@ -1,0 +1,28 @@
+''''script pra criar a visao
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[VIS_ESPECIE_AIDF]') and OBJECTPROPERTY(id, N'IsView') = 1)
+drop view [dbo].[VIS_ESPECIE_AIDF]
+GO
+
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS ON 
+GO
+
+CREATE VIEW dbo.VIS_ESPECIE_AIDF
+AS
+SELECT     TGE_CODIGO, TGE_NOME
+FROM         dbo.TAB_GERAL
+WHERE     (TGE_TIPO = 701) AND (TGE_CODIGO <> 0)
+
+GO
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+'''script pra mudar os campos da tab, porque esta errado
+
+
+update tab_aidf 
+set tai_tipo_aidf = 1 

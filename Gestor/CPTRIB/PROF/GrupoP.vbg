@@ -1,0 +1,4 @@
+VBGROUP 5.0
+Project=VSProfile.vbp
+StartupProject=..\GESTOR\VSGestor.vbp
+Project=..\class\VSClass.vbp

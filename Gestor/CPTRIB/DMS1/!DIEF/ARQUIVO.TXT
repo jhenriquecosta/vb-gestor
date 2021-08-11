@@ -1,0 +1,29 @@
+\keepn{\fs25\b }{\f4\fs29\cf9\b ARQUIVO DE DECLARAÇÕES}
+\pard
+\{bmc MODULO.BMP\}{\b{\cf9 MÓDULO ARQUIVO DE DECLARAÇÕES}}
+
+	Neste módulo, o contribuinte poderá consultar todas as suas declarações informadas, podendo fazer vários tipos de pesquisa, assim como Exclusão, Impressão e Geração de Disquete das Declarações selecionadas.
+
+
+\{bmc MODULO.BMP\}{\b {\cf9 DADOS DA PESQUISA}}
+
+	{\b Inscrição Estadual} - Número da Inscrição do Contribuinte
+	{\b Data da Geração}  - Data de geração do disquete com a declaração 
+	{\b Período} - Mês/Ano de referência da declaração
+	{\b Situação}	- Informa se é declaração:
+		\{bmc CLICK.BMP\} {\b Original} - Declaração do contribuinte em um determinado período
+		\{bmc CLICK.BMP\} {\b Substitutiva} - Declaração que irá substituir uma declaração já gerada e apresentada.
+	{\b Condição} - Indica a situação da Declaração: 
+		 \{bmc CLICK.BMP\}{\b Incompleta} - Declaração ainda não completada.
+		 \{bmc CLICK.BMP\}{\b Finalizada} - Declaração validada e finalizada.
+		 \{bmc CLICK.BMP\}{\b Gerada} - Declaração que já foi gerada em disquete.
+
+\{bmc MODULO.BMP\}{\b {\cf9 OPERAÇÃO DOS BOTÕES DO ARQUIVO DE DECLARAÇÕES}}
+
+	\{bmc CLICK.BMP\}{\b PESQUISAR}	     -  Ativa a consulta das declarações pelos campos indicados.
+	\{bmc CLICK.BMP\}{\b CANCELAR}	     -  Limpa todos os campos do cadastro.
+	\{bmc CLICK.BMP\}{\b {\ul GERAR ENVIO}{\v IDH_Geracao}} 	     -  Gera o Arquivo contendo as declarações seleciondas.
+	\{bmc CLICK.BMP\}{\b DECLARAÇÃO}	     -  Ativa Módulo de {\uldb Declaração}{\v IDH_dief}, buscando declaração Selecionada
+	\{bmc CLICK.BMP\}{\b EXCLUIR}	     -  Exclui uma ou mais declarações selecionadas na consulta
+	\{bmc CLICK.BMP\}{\b IMPRIMIR} 	     -  Imprime uma  ou mais declarações selecionadas na consulta
+	\{bmc CLICK.BMP\}{\b {\uldb SAIR}{\v IDH_contents}}		     -  Encerra este módulo.
